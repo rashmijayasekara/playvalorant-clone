@@ -93,3 +93,61 @@ header{
     vertical-align: middle;
     
 }
+
+
+
+
+/* footer ===============================================================  */
+#footer-1{
+    font-family: "FF Mark W05",Arial,sans-serif;
+    background-color: #292929;
+    height: 80px;
+    padding: 24px;
+    color: #7e7e7e;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-align: center;
+    text-transform: uppercase;
+}
+#footer-1-left{
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    float: left;
+    padding: 8px 16px;
+    color: white;
+}
+#footer-1-left a{
+    text-decoration: none;
+    color: white;
+}
+#footer-1-right a{
+    text-decoration: none;
+    color: white;
+}
+#footer-1-right{
+    width: 50%;
+    height: 100%;
+    text-align: left;
+   float: left;
+   padding: 8px 16px;
+    color: white;
+    
+}
+#footer-1-right:hover{
+    background-color: palevioletred;
+    border-radius: 8px;
+    width: fit-content;
+    
+}
+
+#footer-1-left:hover{
+    background-color: palevioletred;
+    border-radius: 8px;
+  
+}
+
+.submenu{
+    visibility: hidden;
+}
