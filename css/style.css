@@ -16,35 +16,80 @@
     content: "";
     clear: both;
 }
+/*============================================== Layout ==================================================================================== */
 
-/* Typography */
-
-h1{
-    font-size: 2rem;
-    line-height: 2.2rem;
+#col-1{
+    
+    background-color: red;
+    width: 169px;
+    float: left;
+    height: 100%;
+}
+header{
+    height: 78px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+#col-2{
+    
+    background-color: yellow;
+    width: calc(100% - 169px - 188px);
+    float: left;
+    height: 100%;
+}
+#col-3{
+    background-color: #111;
+    width: 188px;
+    float: left;
+    height: 100%;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 38px;
 }
 
-h2{
-    font-size: 1.8rem;
-    line-height: 2.0rem;
-}
-
-h3{
+/*                                                                                                      inside col 3  */
+#globe{
+    height: 32px; 
+    width: 32px;
+    color: white;
     font-size: 1.2rem;
-    line-height: 1.4rem;
+    vertical-align: middle;
+    
+
+
+}
+#globe:hover{
+    background-color: rgba(128, 128, 128, 1);
+    cursor: pointer;
+    border-radius: 6.4px;
 }
 
-h4{
-    font-size: 1rem;
-    line-height: 1.2rem;
-}
+#play-now{
+   padding: 8px 16px;
+   height: 32px;
+   font-size: 13px;
+   border-radius: 12px;
+   font-weight: bold;
+   border-color: transparent;
 
-h5{
-    font-size: 0.9rem;
-    line-height: 1.1rem;
+   background:linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%) ;
+   transition: background 50ms;
+   
 }
-
-h6{
-    font-size: 0.8rem;
-    line-height: 1rem;
+#play-now:hover{
+    background: rgb(255, 70,85);
+    cursor: pointer;
+    
+    
+}
+#col-3-inner-1{
+    display: inline-block;
+    
+}
+#col-3-inner-2{
+    display: inline-block;
+    vertical-align: middle;
+    
 }
