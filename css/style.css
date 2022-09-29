@@ -20,13 +20,13 @@
 
 #col-1{
     
-    background-color: red;
-    width: 169px;
+    background-color: black;
+    width: 190px;
     float: left;
     height: 100%;
 }
 header{
-    height: 78px;
+    height: 80px;
     position: fixed;
     left: 0;
     top: 0;
@@ -34,14 +34,14 @@ header{
 }
 #col-2{
     
-    background-color: yellow;
-    width: calc(100% - 169px - 188px);
+    background-color: black;
+    width: calc(100% - 190px - 195px);
     float: left;
     height: 100%;
 }
 #col-3{
     background-color: #111;
-    width: 188px;
+    width: 195px;
     float: left;
     height: 100%;
     text-align: right;
@@ -93,8 +93,56 @@ header{
     vertical-align: middle;
     
 }
+#col-1{
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-left: 16px;
+}
+#a-1{
+    float: left;
+    background-color: black;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+    
+}
+#svg{
+    fill: white;
+}
+#b-2 svg{
+    fill: white;
+    background-color: white;
+    
+    
+}
+#a-2{
+    height: 100%;
+    float: left;
+    vertical-align:middle;
+    padding-left: 22px;
 
+}
+#a-2 a{
+    position: relative;
+    top: 30%;
+    display: block;
+    transform: translateY(-50%);
+}
+#b-2>div{
+    width: 5px;
+    height: 8px;
 
+}
+#b-1{
+    float: left;
+}
+#b-2{
+    float: left;
+}
+#a-1 :hover svg{
+    fill: #eb0029 !important;
+}
 
 
 /* footer ===============================================================  */
@@ -145,9 +193,86 @@ header{
 #footer-1-left:hover{
     background-color: palevioletred;
     border-radius: 8px;
+    width: fit-content;
+   position: fixed;
   
 }
 
 .submenu{
+    position: relative;
+    display: inline;
+    text-align: left;
+}
+
+
+
+.submenu .submenu-content{
     visibility: hidden;
+    width: 205px;
+    height: 100px;
+    background-color: #292929;
+    color:white;
+    text-align:left;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 100%;
+    position: absolute;
+    z-index: 2;
+    font-family: "FF Mark W05";
+    
+}
+
+#main-nav .submenu:hover .submenu-content{
+    visibility: visible;
+    /* display: block; */
+    cursor: pointer;
+}
+
+#main-nav li{
+   float: left;
+   font-family: "FF Mark W05", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.08rem;
+    
+}
+#main-nav{
+    top: 50%;
+    
+}
+#main-nav li a{
+    position: relative;
+    display: inline-block;
+    padding: 7.5px 16px;
+    color: white;
+    
+    margin-right: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+#main-nav>li:not(submenu):hover a::after{
+  display: block;
+}
+
+#main-nav>li:not(.submenu) a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgb(255,70,85);
+    height: 4px;
+    width: 100%;
+    top:40px;
+    display: none;
+    border-bottom: 2px 2px 0 0;
+}
+
+
+.submenu-content li{
+    text-align: left;
+    display: inline;
+    
+}
+
+.submenu .submenu-content li::after{
+    clear: both;
 }
